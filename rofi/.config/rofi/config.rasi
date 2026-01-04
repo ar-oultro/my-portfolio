@@ -1,0 +1,58 @@
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    terminal: "kitty";
+    font: "JetBrainsMono Nerd Font 11";
+    drun-display-format: "{icon} {name}";
+    location: 0;
+    disable-history: false;
+    hide-scrollbar: true;
+    display-drun: "   Apps: ";
+    display-run: " 󰲋  Run: ";
+    display-window: "   Window :";
+    sidebar-mode: true;
+}
+
+@theme "/dev/null"
+
+/*****----- Main Window -----*****/
+window {
+    width:            500px;
+    border:           5px;
+    border-color:     #ffffff;
+    border-radius:    5px;
+    background-color: #000000;
+    padding:          4px;
+}
+
+/*****----- Listview (Dashboard Grid) -----*****/
+listview {
+    columns:      5;
+    lines:        4;
+    spacing:      1px;
+    layout:       vertical;
+    fixed-height: true;
+}
+
+/*****----- Elements (Nơi chứa Icon) -----*****/
+element {
+    orientation:      vertical; /* Để Icon nằm trên chữ cho giống Dashboard */
+    padding:          8px;
+    border-radius:    5px;
+}
+
+element selected {
+    background-color: #000000;
+    text-color:       #ffffff;
+}
+
+element-icon {
+    size:             48px;    /* Kích thước icon lớn cho Dashboard */
+    cursor:           inherit;
+}
+
+element-text {
+    horizontal-align: 0.5;    /* Căn giữa chữ dưới icon */
+    cursor:           inherit;
+}

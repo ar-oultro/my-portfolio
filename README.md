@@ -1,28 +1,41 @@
-# 🐧 Somorev's Dotfiles
+#   Arasis Dotfiles
 
-> Một không gian làm việc tối giản dựa trên Arch Linux, i3wm.
+Chào mừng đến với kho lưu trữ cấu hình cá nhân của tôi. Đây là nơi chứa toàn bộ "linh hồn" hệ thống mà tôi sử dụng hàng ngày, được tối ưu hóa cho năng suất và thẩm mỹ.
 
-![Thanh Bar](https://img.shields.io/badge/Polybar-Custom-blue?style=for-the-badge&logo=linux)
-![Editor](https://img.shields.io/badge/Neovim-LazyVim-green?style=for-the-badge&logo=neovim)
+## 󰅬 Thành phần hệ thống (Software Stack)
 
-## 💻 Cấu hình Hệ thống
-- **OS**: [Arch Linux](https://archlinux.org/)
-- **WM**: [i3wm](https://i3wm.org/)
-- **Terminal**: [Kitty](https://sw.kovidgoyal.net/kitty/)
-- **Shell**: Zsh (với Nerd Fonts)
-- **Bar**: Polybar (Customized)
-- **Menu**: Rofi (Dashboard style)
-- **Editor**: LazyVim (No-theme setup)
+| Công cụ | Mô tả |
+| :--- | :--- |
+| **Window Manager** | [i3-gaps](https://i3wm.org/) - Quản lý cửa sổ dạng lát gạch. |
+| **Terminal** | [Kitty](https://sw.kovidgoyal.net/kitty/) - GPU-accelerated terminal nhanh và mạnh. |
+| **Editor** | [Neovim](https://neovim.io/) (LazyVim based) - Trình soạn thảo tối thượng. |
+| **Status Bar** | [Polybar](https://polybar.github.io/) - Thanh trạng thái tùy biến cao. |
+| **App Launcher** | [Rofi](https://github.com/davatorium/rofi) - Trình khởi chạy ứng dụng hiện đại. |
+| **Compositor** | [Picom](https://github.com/yshui/picom) - Hiệu ứng bóng đổ và độ trong suốt. |
 
-## 🎨 Trải nghiệm Người dùng
-- **Font**: JetBrainsMono Nerd Font
-- **Icons**: Papirus-Dark
-- **Theme**: Veromus (Customized for transparency)
-- **Input Method**: Fcitx5-Bamboo (Tiếng Việt)
+## 📂 Cấu trúc thư mục
 
-## Cách cài đặt nhanh
-Để thiết lập lại môi trường này trên một máy mới, hãy làm theo các bước sau:
+Các cấu hình được tổ chức để sử dụng với **GNU Stow**:
 
-1. **Cài đặt các gói cần thiết:**
-   ```bash
-   sudo pacman -S git stow kitty i3-wm polybar rofi fcitx5-bamboo ttf-jetbrains-mono-nerd
+```text
+.
+├── i3/      # Cấu hình i3wm
+├── kitty/   # Cấu hình Terminal Kitty
+├── nvim/    # Neovim (LazyVim setup)
+├── picom/   # Hiệu ứng màn hình
+├── polybar/ # Thanh trạng thái
+└── rofi/    # Menu ứng dụng
+
+## 󰸰 Cài đặt nhanh
+
+Công cụ cần cài đặt: stow, git
+
+'git clone '
+'cd ~/dotfiles'
+
+Sử dụng stow:
+'stow -t ~ nvim i3 kitty picom polybar rofi'
+
+## 󰌌 Phím tắt (Keybindings)
+
+##   Ảnh chụp màn hình 
