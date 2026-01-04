@@ -26,6 +26,7 @@ Các cấu hình được tổ chức để sử dụng với **GNU Stow**:
 ├── polybar/ # Thanh trạng thái
 └── rofi/    # Menu ứng dụng
 
+~~~
 ## 󰸰 Cài đặt nhanh
 
 Công cụ cần cài đặt: stow, git
