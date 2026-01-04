@@ -13,6 +13,18 @@ Chào mừng đến với kho lưu trữ cấu hình cá nhân của tôi. Đây
 | **App Launcher** | [Rofi](https://github.com/davatorium/rofi) - Trình khởi chạy ứng dụng hiện đại. |
 | **Compositor** | [Picom](https://github.com/yshui/picom) - Hiệu ứng bóng đổ và độ trong suốt. |
 
+
+## 󰸰 Cài đặt nhanh
+
+Công cụ cần cài đặt: stow, git
+
+'git clone '
+'cd ~/dotfiles'
+
+Sử dụng stow:
+'stow -t ~ nvim i3 kitty picom polybar rofi'
+
+
 ## 📂 Cấu trúc thư mục
 
 Các cấu hình được tổ chức để sử dụng với **GNU Stow**:
@@ -25,18 +37,3 @@ Các cấu hình được tổ chức để sử dụng với **GNU Stow**:
 ├── picom/   # Hiệu ứng màn hình
 ├── polybar/ # Thanh trạng thái
 └── rofi/    # Menu ứng dụng
-
-~~~
-## 󰸰 Cài đặt nhanh
-
-Công cụ cần cài đặt: stow, git
-
-'git clone '
-'cd ~/dotfiles'
-
-Sử dụng stow:
-'stow -t ~ nvim i3 kitty picom polybar rofi'
-
-## 󰌌 Phím tắt (Keybindings)
-
-##   Ảnh chụp màn hình 
